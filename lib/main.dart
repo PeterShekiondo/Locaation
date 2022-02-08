@@ -105,7 +105,6 @@ class _MyHomePageState extends State<MyHomePage> {
        }
 
        _updatePositionList(
-         // _PositionItemType.log,
          'Listening for position updates $statusDisplayValue',
        );
      });
