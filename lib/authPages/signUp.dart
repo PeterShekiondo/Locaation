@@ -28,14 +28,15 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
             right: 0,
             left: 0,
             child: Container(
-              height: 300,
+              height: 950,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage("images/background.jpg"),
-                      fit: BoxFit.fill)),
+                    opacity: .9,
+                      image: AssetImage("assets/images/location3.jpg"),
+                      fit: BoxFit.cover)),
               child: Container(
                 padding: const EdgeInsets.only(top: 90, left: 20),
-                color: const Color(0xFF3b5999).withOpacity(.85),
+                color:  Colors.black12.withOpacity(.7),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -105,7 +106,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                     BoxShadow(
                         color: Colors.black.withOpacity(0.3),
                         blurRadius: 15,
-                        spreadRadius: -5),
+                        spreadRadius: 5),
                   ]),
               child: SingleChildScrollView(
                 child: Column(
@@ -189,7 +190,11 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
             left: 0,
             child: Column(
               children: [
-                Text(isSignupScreen ? "Or Signup with" : "Or Signin with"),
+                Text(isSignupScreen ? "Or Signup with" : "Or Signin with",
+                  style: const TextStyle(
+                    color: Colors.white
+                  ),
+                    ),
                 Container(
                   margin: const EdgeInsets.only(right: 20, left: 20, top: 20),
                   child: Row(
