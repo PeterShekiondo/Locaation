@@ -128,7 +128,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold,
                                     color: !isSignupScreen
-                                        ? Palette.activeColor
+                                        ? AppColors.mainColor
                                         : Palette.textColor1,
                                   letterSpacing: .5,
                                 ),
@@ -138,7 +138,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                                   margin: const EdgeInsets.only(top: 3),
                                   height: 2,
                                   width: 55,
-                                  color: Colors.orange,
+                                  color: AppColors.mainColor,
                                 )
                             ],
                           ),
@@ -158,7 +158,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold,
                                     color: isSignupScreen
-                                        ? Palette.activeColor
+                                        ? AppColors.mainColor
                                         : Palette.textColor1
                                 ),
                               ),
@@ -167,7 +167,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                                   margin: const EdgeInsets.only(top: 3),
                                   height: 2,
                                   width: 55,
-                                  color: Colors.orange,
+                                  color: AppColors.mainColor,
                                 )
                             ],
                           ),
@@ -354,7 +354,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                     TextSpan(
                       //recognizer: ,
                       text: "term & conditions",
-                      style: TextStyle(color: Colors.orange),
+                      style: TextStyle(color: Color(0xFF5d69b3)),
                     ),
                   ]),
             ),

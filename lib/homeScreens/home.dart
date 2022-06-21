@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:location/assets/colors/colors.dart';
 import 'package:location/homeScreens/mainScreen.dart';
 import 'package:location/homeScreens/location.dart';
-import 'package:location/homeScreens/account.dart';
+import 'package:location/homeScreens/account/account.dart';
 
 
 class Home extends StatefulWidget {
   static const List pages = [
-    MainScreen(),
+    // MainScreen(),
     Location(title: "My location"),
-    Account(),
+     Account(),
   ];
   const Home({Key? key}) : super(key: key);
 
@@ -20,7 +20,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   static const List pages = [
-    MainScreen(),
+    // MainScreen(),
     Location(title: "My location"),
     Account(),
   ];
@@ -51,7 +51,7 @@ class _HomeState extends State<Home> {
         showUnselectedLabels: true,
         elevation: 1,
         items: const [
-          BottomNavigationBarItem(label:"Home", icon: Icon(Icons.apps)),
+          // BottomNavigationBarItem(label:"Home", icon: Icon(Icons.apps)),
           BottomNavigationBarItem(label:"Location", icon: Icon(Icons.location_on)),
           BottomNavigationBarItem(label:"Account", icon: Icon(Icons.person)),
         ],

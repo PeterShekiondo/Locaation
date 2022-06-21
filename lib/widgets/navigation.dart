@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:location/homeScreens/account.dart';
+import 'package:location/homeScreens/account/account.dart';
 import 'package:location/homeScreens/location.dart';
 import 'package:location/homeScreens/mainScreen.dart';
 

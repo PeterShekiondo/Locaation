@@ -91,6 +91,11 @@ class _LocationState extends State<Location> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+          backgroundColor: AppColors.mainColor,
+        elevation: 5,
+        title: const Text("Live location"),
+      ),
       body: Stack(
         children: [
           GoogleMap(
